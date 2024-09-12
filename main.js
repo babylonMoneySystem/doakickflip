@@ -26,6 +26,7 @@ scene.add( cube );
 camera.position.z = 5;
 camera.position.y = 2;
 
+//Render loop
 function animate() {
 
 	renderer.render( scene, camera );
