@@ -32,8 +32,7 @@ function animate() {
 
 }
 
-
-// movement
+//Event Listeners
 var keyMap = [];
 document.addEventListener("keydown", onDocumentKeyDown, false);
 document.addEventListener("keyup", onDocumentKeyUp, true);
@@ -47,6 +46,8 @@ function onDocumentKeyUp(event){
     keyMap[keyCode] = false;
     executeMovement();
 }
+
+//Skateboard positioning based on accelaration and friction
 function executeMovement() {
     // up
     if (keyMap[KeyCode.UP_KEY] == true) {
@@ -60,5 +61,12 @@ function executeMovement() {
         // right
     }  if (keyMap[KeyCode.RIGHT_KEY] == true) {
         cube.position.x += SPEED;
+		pushSkateboard()
     }
 };
+
+// // physics
+// function pushSkateboard(KeyCode) {
+
+// 	cube.position.x += v_1*t a*tˆ2/2
+// }
