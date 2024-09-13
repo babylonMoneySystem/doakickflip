@@ -2,7 +2,7 @@
 3D skate model App using Three.js 🛹
 
 # Step 1: Install dependencies
-```npm install```
+```npm install \n npx vite```
 
 # Step 2: Run local program
-```npm run start```
+```npx serve .```
